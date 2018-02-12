@@ -1,0 +1,149 @@
+/* common classes */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f1f4f9;
+	margin: 0;
+}
+
+.header {
+	position: fixed;
+	background: #fff;
+	max-height: 70px;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	background: #fff;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #eeeeee;
+}
+
+.navbar-default  .navbar-brand, .navbar-default  .navbar-brand:hover,
+	.navbar-default  .navbar-brand:focus {
+	color: #333;
+}
+
+li {
+	margin: 17px 8px;
+	padding: 6px;
+	text-shadow: none;
+	color: #3f4244;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	float: left;
+}
+
+section .container {
+	padding: 10px;
+}
+
+.form-wrapper {
+	overflow: auto;
+	max-height: 500px;
+}
+
+.form-box {
+	padding: 0;
+	clear: both;
+	float: left;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 25px;
+	padding-top: 70px;
+}
+
+.form-title {
+	padding: 0 17px;
+	margin-bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.form-title h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: default;
+	color: #4e5e6e;
+}
+
+.form-content {
+	padding: 15px;
+}
+
+form {
+	width: 100%;
+	clear: both;
+}
+button {
+    height: 40px;
+    font-size: 16px;
+    padding: 12px 0;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(83,95,107,.5);
+    min-width: 120px;
+    padding: 8px 0;
+    line-height: 24px;
+    border: 0;
+    color: #fff;
+    background: green;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    display: block;
+    line-height: 1.14;
+    margin-bottom: 8px;
+}
+input[type='text'], input[type='password'], select {
+	display: block;
+	min-width: 200px;
+	width: 300px;
+    max-width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 2px;
+    color: #333;
+    border: 1px solid #c7cdd4;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(83,95,107,.5)
+}
+
+input[type='radio'] {
+	    background-color: transparent;
+    border-style: none;
+    color: inherit;
+    font-size: 1em;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.radioGrp {
+  margin-bottom: 16px
+} 
+
+.radioGrp label{
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 16px;
+    vertical-align: top;
+    line-height: 20px;
+    height: 24px;
+}
