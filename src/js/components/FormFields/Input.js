@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-const INPUT_TYPES = ['text', 'number', 'password']
+const INPUT_TYPES = ['text', 'number', 'password', 'email']
 
 class Input extends Component {
     static defaultProps = {
