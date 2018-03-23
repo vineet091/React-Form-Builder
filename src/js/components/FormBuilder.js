@@ -36,8 +36,9 @@ export default class Excel extends React.Component {
 				options: [
 				  {label: 'One', value: 1},
 				  {label: 'Two', value: 2},
-				   {label: 'Three', value: 3},			  	]
-				 },{
+				   {label: 'Three', value: 3},			  	
+				]
+			  },  {
 				  label: 'remember me',
 				  name: 'rememberme',
 				  type: 'radio',
