@@ -7,9 +7,9 @@ export default class Header extends React.Component {
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-	       <a class="navbar-brand" href="#">Form Builder</a>
-        </div>
-		</div>
+	    <a class="navbar-brand" href="#">Form Builder</a>
+          </div>
+	</div>
       </nav>
     );
   }
