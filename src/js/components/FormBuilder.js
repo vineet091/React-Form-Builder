@@ -58,7 +58,7 @@ export default class Excel extends React.Component {
 	}
 
     handleChange = (type, value) => {
-       const {formData } = this.state
+       let formData = { ...this.state.formData }
        formData[type] = value
        this.setState({ formData })
     }
