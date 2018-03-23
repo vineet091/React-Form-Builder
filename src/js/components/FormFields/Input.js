@@ -21,15 +21,16 @@ class Input extends Component {
     }
 
     onChange = (event) => {
-        const { name } = this.props;
-        if (this.props.onChange && event && event.target) {
-            this.props.onChange(name, event.target.value);
+        const { name, onChange } = this.props;
+        if (onChange && event && event.target) {
+            onChange(name, event.target.value);
         }
     }
 
     onBlur = (event) => {
-        if (this.props.onBlur) {
-            this.props.onBlur(event.target.value);
+        const { onBlur } = this.props;
+        if (onBlur) {
+            onBlur(event.target.value);
         }
     }
 
