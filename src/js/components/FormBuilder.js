@@ -6,7 +6,12 @@ import Select from "./FormFields/Select";
 import RadioButton from "./FormFields/Radio";
 
 
-const INPUT_TYPES = ['text', 'number', 'password']
+const INPUT_TYPES = [
+	'text', 
+	'number', 
+	'password',
+	'email',
+]
 const BUTTON_TYPES = [
     'submit',
     'button',
