@@ -18,9 +18,9 @@ class Button extends Component {
 
     onClick = (ev) => {
         ev.preventDefault();
-        const { name } = this.props;
-        if (this.props.onClick && name) {
-            this.props.onClick(name);
+        const { name, onClick } = this.props;
+        if ((typeof onClick === 'function') && name) {
+            onClick(name);
         }
     }
     render() {
