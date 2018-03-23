@@ -29,7 +29,7 @@ class Input extends Component {
 
     onBlur = (event) => {
         const { onBlur } = this.props;
-        if (onBlur) {
+        if (typeof onBlur === 'function') {
             onBlur(event.target.value);
         }
     }
