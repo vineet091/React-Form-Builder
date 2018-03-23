@@ -16,7 +16,6 @@ export default class Excel extends React.Component {
 	constructor() {
 		super();
 		this.state = {
- 
 			fields: [
 			  {
 			      name: 'username',
@@ -29,19 +28,19 @@ export default class Excel extends React.Component {
 			      type: 'password',
 			      required: true,
 			  }, {
-			  	label: 'Age',
-			  	name: 'age',
-			  	placeholder: 'Select Age',
-                type: 'select',
-                required: true,
-			  	options: [
-                  {label: 'One', value: 1},
-                  {label: 'Two', value: 2},
-                   {label: 'Three', value: 3},			  	]
-			  },{
-			  	label: 'remember me',
-			  	name: 'rememberme',
-                type: 'radio',
+				label: 'Age',
+				name: 'age',
+				placeholder: 'Select Age',
+				type: 'select',
+				required: true,
+				options: [
+				  {label: 'One', value: 1},
+				  {label: 'Two', value: 2},
+				   {label: 'Three', value: 3},			  	]
+				 },{
+				  label: 'remember me',
+				  name: 'rememberme',
+				  type: 'radio',
 			  },  {
 			      label: 'Submit',
 			      type: 'submit',
@@ -58,9 +57,8 @@ export default class Excel extends React.Component {
 	}
 
     handleChange = (type, value) => {
-    	const {formData } = this.state
-    	formData[type] = value
-
+       const {formData } = this.state
+       formData[type] = value
        this.setState({ formData })
     }
 
@@ -70,23 +68,23 @@ export default class Excel extends React.Component {
 	    if (type === 'submit') {
 		    fields.map(function(data, index) {	
 		    	if (data.required && !formData[data.name]) {
-	                alert(`${data.name} is required.`)         
-	                isValid = false;
+		           alert(`${data.name} is required.`)         
+		           isValid = false;
 		    	}
-	       })
-	       if(isValid) {
-	       	alert('Form submitted successfully.')
-	       }  
-       } else {
-       	formData[type] = value
-       	
-       this.setState({ formData })
-       }
+		    })
+		    if(isValid) {
+	        	alert('Form submitted successfully.')
+		    }  
+	     } else {
+		formData[type] = value
+	        this.setState({ formData })
+	     }
 
     }
 
-  	componentWillMount = () => {
-	}
+    componentWillMount = () => {
+    }
+    
     render() {
     	const {fields, formData} = this.state
 	    let tRowsElement = [], formElements = [];
@@ -106,17 +104,17 @@ export default class Excel extends React.Component {
     return (
         <div class="container">
             <div class="form-box">
-	            <div class="form-title">
-		            <h3 class="title">Login</h3>
-	            </div>
+	           <div class="form-title">
+		        <h3 class="title">Login</h3>
+	           </div>
 	           <div class="form-content">
-                   <div class="form-wrapper">
-                   <form>
-                    {formElements}
-                    </form>
-	              </div>
-			      </div>
-	         </div>
+			<div class="form-wrapper">
+		             <form>
+			        {formElements}
+			     </form>
+			</div>
+        	   </div>
+	     </div>
         </div>
     );
   }
