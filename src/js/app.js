@@ -4,4 +4,4 @@ import { Provider } from "react-redux"
 import Layout from "./components/Layout";
 
 const app = document.getElementById('app');
-ReactDOM.render(<Provider><Layout/><Provider>, app);
+ReactDOM.render(<Layout/>, app);
