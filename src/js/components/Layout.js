@@ -7,7 +7,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header />
-		<FormBuilder />
+	<FormBuilder />
       </div>
     );
   }
